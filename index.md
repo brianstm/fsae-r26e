@@ -64,10 +64,10 @@ $x = \frac{a}{b}$
 
 ## Tables
 
-| Name   | Age |
-| ------ | --- |
-| ASDASD | 32  |
-| QWEQWE | 12  |
+| Name | Status |
+| ---- | ------ |
+| JON  | IN     |
+| JOHN | OUT    |
 
 ## Horizontal Rule
 
