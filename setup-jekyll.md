@@ -15,6 +15,8 @@ This guide walks through setting up a Jekyll site on GitHub Pages with GitHub Ac
 - Create a new repository or use an existing one.
 - Push your site files (like this repo) containing `_config.yml`, `index.md`, and optionally `assets/`, `_includes/`, etc.
 
+![1](/assets/flow/1.png)
+
 ## 2) Enable GitHub Pages (Settings → Pages)
 
 1. Go to your repository on GitHub.
@@ -22,6 +24,10 @@ This guide walks through setting up a Jekyll site on GitHub Pages with GitHub Ac
 3. Under "Build and deployment → Source", select `GitHub Actions`.
 4. Click the suggested Jekyll workflow (or create one) and commit it. This adds `.github/workflows/jekyll.yml`.
 5. Wait for the Action to run. When it succeeds, your site will be published at the URL shown on the Pages screen.
+
+![2](/assets/flow/2.png)
+![3](/assets/flow/3.png)
+![4](/assets/flow/4.png)
 
 Notes:
 
