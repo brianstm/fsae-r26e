@@ -10,15 +10,18 @@ Welcome! This page shows basic Markdown features with examples.
 ## Headings
 
 # Heading 1
+
 ## Heading 2
+
 ### Heading 3
+
 #### Heading 4
 
 ## Text Styles
 
 **Bold text**
 
-*Italic text*
+_Italic text_
 
 ~~Strikethrough~~
 
@@ -61,10 +64,10 @@ $x = \frac{a}{b}$
 
 ## Tables
 
-| Name  | Age |
-|-------|-----|
-| Alice |  24 |
-| Bob   |  19 |
+| Name   | Age |
+| ------ | --- |
+| ASDASD | 32  |
+| QWEQWE | 12  |
 
 ## Horizontal Rule
 
