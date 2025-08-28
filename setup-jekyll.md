@@ -67,14 +67,14 @@ Tips:
 
 ## 4) Pick a theme
 
-See the [Themes Guide]({{ "/themes-guide/" | relative_url }}) for choosing an official theme, switching, and customizing via SCSS and layouts.
+See the [Themes Guide]({{ "/themes-guide" | relative_url }}) for choosing an official theme, switching, and customizing via SCSS and layouts.
 
 ## 5) Create pages and links
 
 - Create Markdown files at the repo root or inside folders (e.g., `about.md`, `docs/getting-started.md`).
 - Use YAML front matter for title/layout.
 - Link between pages using `relative_url` to respect `baseurl`.
-- For Markdown syntax and kramdown features, see the [Markdown Guide]({{ "/markdown-guide/" | relative_url }}).
+- For Markdown syntax and kramdown features, see the [Markdown Guide]({{ "/markdown-guide" | relative_url }}).
 
 ## 6) Optional: Local preview (advanced)
 
@@ -86,6 +86,57 @@ If you want to preview locally:
 4. Open `http://localhost:4000`.
 
 For many teams, relying on GitHub Actions builds is enough.
+
+---
+
+## File Structure
+
+Below is how common file paths map to final URLs. A folder with an `index.md` (or `index.html`) produces a clean trailing-slash URL. A single Markdown file at a path produces a `.html` URL (and is typically also reachable without the `.html`).
+
+Project tree (excerpt):
+
+```text
+/
+├─ index.md                  -> /
+├─ about.md                  -> /about (also /about.html)
+├─ test/
+│  ├─ 1/
+│  │  └─ index.md            -> /test/1/
+│  ├─ 2/
+│  │  └─ index.md            -> /test/2/
+│  └─ 3/
+│     └─ index.md            -> /test/3/
+└─ powertrain/
+   ├─ index.md               -> /powertrain/
+   └─ m1/
+      ├─ cascadia.md         -> /powertrain/m1/cascadia (also .html)
+      └─ msd.md              -> /powertrain/m1/msd (also .html)
+```
+
+Equivalents and examples:
+
+- `test/1/index.md` → URL: `/test/1/`
+- `test/1.md` → URL: `/test/1.html` (also usually `/test/1`)
+- Root `index.md` → URL: `/`
+- `about.md` → URL: `/about.html` (also usually `/about`)
+
+Pretty permalinks (optional):
+
+```yaml
+# _config.yml
+permalink: pretty
+```
+
+Per-page permalink (overrides the default):
+
+```yaml
+---
+title: Getting Started
+permalink: /docs/getting-started/
+---
+```
+
+Note: If your site is a project site with `baseurl: "/repo"`, the actual URL will be prefixed, e.g. `/repo/test/1/`.
 
 ---
 
