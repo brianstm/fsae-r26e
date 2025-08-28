@@ -83,3 +83,7 @@ $x = \frac{a}{b}$
 - [Page 1]({{ "/test/1/" | relative_url }})
 - [Page 2]({{ "/test/2/" | relative_url }})
 - [Page 3]({{ "/test/3/" | relative_url }})
+
+## Guides
+
+- [Jekyll + GitHub Pages Setup Guide]({{ "/setup-jekyll/" | relative_url }})
