@@ -183,6 +183,12 @@ Links respecting baseurl:
 
 Conditionals/loops:
 
+{% assign items = site.pages | where: "layout", "default" %}
+{% for p in items %}
+
+- [{{ p.title }}]({{ p.url | relative_url }})
+  {% endfor %}
+
 ```md
 {% assign items = site.pages | where: "layout", "default" %}
 {% for p in items %}
