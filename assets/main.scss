@@ -1,0 +1,75 @@
+@import "minima";
+
+// Custom variables
+$base-font-family: "Helvetica Neue", Arial, sans-serif;
+$base-font-size: 18px;
+$content-width: 900px;
+$on-palm: 600px;
+$on-laptop: 800px;
+
+// Custom colors
+$brand-color: #2a7ae4;
+$background-color: #fdfdfd;
+$text-color: #333;
+
+// Custom styles
+body {
+  font-family: $base-font-family;
+  background-color: $background-color;
+}
+
+.site-header {
+  background-color: $brand-color;
+  border-bottom: none;
+
+  .site-title {
+    color: white;
+    &:visited {
+      color: white;
+    }
+  }
+}
+
+.post-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $brand-color;
+  }
+}
+
+// Style your tables
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+}
+
+// Style code blocks
+pre,
+code {
+  border-radius: 4px;
+}
+
+// Custom blockquote styling
+blockquote {
+  border-left: 4px solid $brand-color;
+  background-color: #f9f9f9;
+  padding: 1em;
+  margin: 1em 0;
+  font-style: italic;
+}
