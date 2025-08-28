@@ -183,12 +183,10 @@ Links respecting baseurl:
 
 Conditionals/loops:
 
-{% assign items = site.pages | where: "layout", "default" %}
-{% for p in items %}
+Code:
+![loop](/assets/loop.png)
 
-- [{{ p.title }}]({{ p.url | relative_url }})
-  {% endfor %}
-
+Result:
 ```md
 {% assign items = site.pages | where: "layout", "default" %}
 {% for p in items %}
