@@ -80,6 +80,6 @@ $x = \frac{a}{b}$
 
 ## Test Pages
 
-- [Page 1](/test/1/)
-- [Page 2](/test/2/)
-- [Page 3](/test/3/)
+- [Page 1]({{ "/test/1/" | relative_url }})
+- [Page 2]({{ "/test/2/" | relative_url }})
+- [Page 3]({{ "/test/3/" | relative_url }})
