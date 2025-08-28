@@ -35,7 +35,7 @@ Key fields to set:
 ```yaml
 title: Your Site Title
 description: Short description
-url: "https://<your-username>.github.io"
+url: "https://<your-gh-username>.github.io"
 baseurl: "/<repo-name>" # empty for user/organization sites, set for project sites
 
 # Theme (using GitHub Pages remote theme)
