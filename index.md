@@ -9,9 +9,9 @@ Start here to set up your site, then dive into detailed guides.
 
 ## Quick Links
 
-- [Jekyll + GitHub Pages Setup]({{ "/setup-jekyll/" | relative_url }})
-- [Markdown Guide]({{ "/markdown-guide/" | relative_url }})
-- [Themes Guide]({{ "/themes-guide/" | relative_url }})
+- [Jekyll + GitHub Pages Setup]({{ "/setup-jekyll" | relative_url }})
+- [Markdown Guide]({{ "/markdown-guide" | relative_url }})
+- [Themes Guide]({{ "/themes-guide" | relative_url }})
 
 ## Test Pages
 
