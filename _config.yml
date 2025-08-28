@@ -5,8 +5,6 @@ url: "https://brianstm.github.io"
 
 # Remote theme options
 remote_theme: pages-themes/cayman@v0.2.0
-# OR remote_theme: mmistakes/minimal-mistakes@4.24.0
-# OR remote_theme: just-the-docs/just-the-docs
 
 markdown: kramdown
 highlighter: rouge
